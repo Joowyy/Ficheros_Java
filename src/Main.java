@@ -16,6 +16,13 @@ public class Main {
 		System.out.println("¿Que letra quieres ver que se repita?");
 		char letraUsuario = sc.nextLine().charAt(0);
 		
+		contarFichero(nombreFichero, letraUsuario);
+		
+	}
+	
+//	Funcion para contar letras
+	public static void contarFichero (String nombreFichero, char letraUsuario) {
+		
 //		Creamos un objeto 'File' asignando el nombre del fichero del Usuario.
 		File f = new File(nombreFichero);
 		
