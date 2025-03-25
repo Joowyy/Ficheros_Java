@@ -33,7 +33,7 @@ public class Main {
 			int letra;
 			int numCaracteres = 0;
 			
-			while((letra= fr.read()) != -1) {
+			while((letra = fr.read()) != -1) {
 				
 //				Imprime el contenido del fichero
 				System.out.print((char) letra);
