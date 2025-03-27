@@ -64,6 +64,8 @@ public class Main {
 //			Imprimimos los resultados
 			System.out.println("\nTenemos un total de -> " + contadorLineas + " lineas");
 			System.out.println("Tenemos un total de -> " + contadorPalabras + " palabras");
+			
+//			Lo mandamos a otro fichero
 			System.out.println("Las repeticiones de palabra se muestran en el fichero 'FicheroContador.txt'");
 			fw.write("La palabra '" + palabraRepetida + "' se repite un total de -> " + contadorPalabraUnica);
 			
