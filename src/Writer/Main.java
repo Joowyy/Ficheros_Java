@@ -17,11 +17,11 @@ public class Main {
 //		Pedimos la palabra
 		System.out.println("Dime la palabra que deseas ver que se repite");
 		String palabraRepetida = sc.nextLine();
-		System.out.println("Dime cuantas palabras quieres copiar:");
-		int palabrasCopiar = sc.nextInt();
+		System.out.println("Dime la palabra de las lineas:");
+		String palabrasCopiar = sc.nextLine();
 		
 //		Creamos los ficheros
-		File f = new File("el_quijote.txt");
+		File f = new File("EjemploBuffered.txt");
 		File f2 = new File("FicheroContador.txt");
 		
 		try {
@@ -49,10 +49,10 @@ public class Main {
 					
 					contadorPalabras++;
 					
-//					Limita el texto a las palabras que necesites
-					if (contadorPalabras <= palabrasCopiar) {
+//					Busca las lineas con la palabra indicada por el usuario
+					if (palabras[i].contains(palabrasCopiar)) {
 						
-						fw.write(palabras[i] + " ");
+						fw.write(linea + "\n");
 						
 					}
 					
